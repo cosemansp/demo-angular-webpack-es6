@@ -1,0 +1,28 @@
+{
+    "root": true,
+    "extends": "airbnb/base",
+    "globals": {
+        "define": true,
+        "it": true,
+        "describe": true,
+        "afterEach": false,
+        "beforeEach": false,
+        "describe": false,
+        "expect": false,
+        "inject": false,
+        "angular": false,
+        "emit": false
+    },
+    "rules": {
+        "indent": [2, 4],
+        "strict": [0, 'function'],
+        "func-names": [0], // so we don't have to give IFFEEs and anonymus functions a name
+        "spaced-comment": [0, "never"], // so we don't have to give a space between // and a comment
+        "id-length": [0], // so we can use identifiers of only one char (for example underscore as _),
+        "new-cap": [2, { "capIsNewExceptions": ["Router", "Schema"] }],
+        "no-use-before-define": [2, "nofunc"], //allow calling functions before they're declared
+        "padded-blocks": [0, "always"], //so that you always have to use padding around/in a code block
+        "no-unused-expressions": 0,
+        "no-trailing-spaces": [2, { "skipBlankLines": true }]
+    }
+}
