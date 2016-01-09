@@ -90,7 +90,8 @@ gulp.task('copy-to-dist', function() {
             './app/**/*.html',
             '!./app/index.html'
         ])
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist'))
+        .pipe($.size({title: 'static'}))
 });
 
 // Copy our index file and inject css/script imports for this build

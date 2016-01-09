@@ -4,7 +4,6 @@
 const webpack = require('webpack');
 const path = require('path');
 const extractTextPlugin = require('extract-text-webpack-plugin');
-const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 const packageJson = require('./package.json');
 
 
@@ -25,7 +24,6 @@ module.exports = function webpackConfigFactory(environment) {
                 VERSION: JSON.stringify(packageJson.version),
                 ENVIRONMENT: JSON.stringify(environment)
             }),
-            //new ngAnnotatePlugin({add: true })
         ],
 
         output: {
