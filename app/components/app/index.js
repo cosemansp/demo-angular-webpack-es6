@@ -1,8 +1,10 @@
 'use strict';
 
 class App {
-    constructor() {
+    // @ngInject
+    constructor($log) {
         this.title = 'hello world';
+        $log.info('hello this is my first log');
     }
 }
 

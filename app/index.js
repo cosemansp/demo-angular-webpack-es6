@@ -1,6 +1,8 @@
+import 'babel-polyfill';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
+import './index.scss';
 import app from './components/app';
 
 export default angular
